@@ -1,2 +1,17 @@
 Do you really want to know what's in here? Hi there  
 The quick brown fox jumps over a lazy dog.
+
+1. Untracked
+         |
+git add --<file name> //the file can be staged right from this step but modification is generally necessary
+
+2. Unmodified
+           |
+modify the contents of the files in the git repo.
+
+3. Modified
+          |
+git add --<file name>
+
+4. Staged : After staging, the commit statement is run and modified contents are converted to unmodified files.
+
