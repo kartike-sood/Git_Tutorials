@@ -19,3 +19,11 @@ This is slightly changed.
       [Author is the one who has first created the file whereas the committter is the one who has made some changes to it.]
 
 8. git log --since=2.days/2.months/4.years __ Shows the commits which have been since the specified duration.
+
+9. git commit --amend __VERY IMPORTANT COMMAND__>> This command lets us merge the changes made by us to the file
+						 and also allowing us to change the commit message given by the
+						 author at the same time
+ 
+10. rm --cached second.txt __ >> This command lets us untrack an existingly tracked file. [VERY IMPORTANT]
+
+11. mv second1.txt second2.txt __>> Lets us rename a file.
