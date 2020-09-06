@@ -28,3 +28,5 @@
 			                 untracked that tracked file. 
 
 11. git mv second1.txt second2.txt __>> Lets us rename a file.
+
+12. git push -u origin master__ Pushes the changes to the repository on github
