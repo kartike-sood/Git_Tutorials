@@ -30,3 +30,23 @@
 11. git mv second1.txt second2.txt __>> Lets us rename a file.
 
 12. git push -u origin master__ Pushes the changes to the repository on github
+
+13. git config --global alias.last 'log -p -1' __ Changes the command from 'log -p -1' to just 'last' [more or less a short hand version of command] {QUITE IMPORTANT}
+
+                                                                  			BRANCHING THE DIRECTORIES
+
+1. git checkout -b <branch name> __ Creates a new branch named <branch name> and -b is used because <branch name> branch doesn't exist already.
+
+2. git checkout master __ Switches to the master branch
+    git checkout <branch name> __ Switches to the <branch name> branch
+
+						MERGING THE BRANCHES
+
+1. git commit merge <branch name> __ We will write this in the master branch or the branch in which we want to merge the <branch name> branch
+
+2. git commit -m "____" >>> This command finally merges the two branches
+
+[MERGE CONFLICT]
+
+If the two branches change the files in different ways, then the merge conflict arises, which can be easily resolved by choosing one of the two changes. Meanwhile most of the other changes
+are resolved by the git merger automatically.

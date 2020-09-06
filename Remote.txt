@@ -1,0 +1,23 @@
+COMMANDS ON REMOTE REPOSITORY
+
+1. git clone <url.dns> <name_directory>
+	
+	<name_directory> will the name of the folder in which the files of
+	 remote repository will be pulled
+
+2. git remote add origin <url>
+    ____ This command helps us to add remote repository to our local pc.
+
+3. git push -u origin master__Simple push command
+
+4. git remote >>>> Shows all the remote git repositories that are added.
+
+5. git remote -v >>>Shows on which repositories where we can fetch and push files.
+
+6. git push origin Develop >> Pushes Develop branch to the remote repository
+
+7. git branch -d Develop >>> Deletes the Develop branch if it is already merged to the master branch.
+
+8. git branch -D Develop >>> Deletes the develop branch even if its not merged to the master branch
+
+9. git push -d/D Develop >> Deletes the remote Develop branch
