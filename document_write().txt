@@ -1,0 +1,24 @@
+document.write()_______________________________________
+-------------------------------------------------------
+The document object's write () method is a simple
+way to add content that was not in the original
+source code to the page, but its use is rarely advised.
+-------------------------------------------------------
+ADVANTAGES
+• It is a quick and easy way to show beginners how
+content can be added to a page.
+--------------------------------------------------------
+DISADVANTAGES
+
+• It only works when the page initially loads.
+
+• If you use it after the page has loaded it can:
+    1. Overwrite the whole page
+    2. Not add the content to the page
+    3. Create a new page
+
+• It can cause problems with XHTML pages that
+are strictly validated.
+
+• This method is very rarely used by programmers
+these days and is generally frowned upon. 

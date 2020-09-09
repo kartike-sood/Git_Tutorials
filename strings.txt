@@ -1,0 +1,24 @@
+String Objects in JAVASCRIPT
+
+Property:
+string.length - returns the length of the string
+
+Popular methods used with Strings:-
+_____________________________________________________________________
+1. saying.toUpperCase();         Home sweet home      'HOME SWEET HOME '
+---------------------------------------------------------------------
+2.saying.tolowerCase();         Home sweet home      'home sweet home '
+---------------------------------------------------------------------
+3.saying.charAt(12);             Home sweet home      'o'
+---------------------------------------------------------------------
+4.saying.indexOf('ee');          Home sweet home       7
+---------------------------------------------------------------------
+5. saying.lastlndexOf('e');       Home sweet home       14
+---------------------------------------------------------------------
+6. saying.substring(8,14);        Home sweet home       'et hom'
+---------------------------------------------------------------------
+7. saying.split(' ') ;            Home sweet home       ['Home' , 'sweet' , 'home' , ' ']
+---------------------------------------------------------------------
+8. saying.trim();                 Home sweet home       'Home sweet home'
+---------------------------------------------------------------------
+9. saying.replace('me','w');      Home sweet home       'How sweet home ' 

@@ -1,0 +1,9 @@
+RULES FOR WRITING NAMES OF A VARIABLE:
+
+1. The name must begin with a letter, dollar sign ($),or an underscore (_). It must not start with a number.
+
+2. The name can contain letters, numbers, dollar sign ($), or an underscore (_). Note that you MUST NOT use a dash(-) or a period (.) in a variable name. 
+
+3. You cannot use keywords or reserved words.
+
+4. If your variable name is made up of more than one word, use a capital letter for the first letter of every word after the first word. For example, firstName rather than firstname (this is referred to as camel case).

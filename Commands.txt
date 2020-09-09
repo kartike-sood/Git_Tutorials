@@ -1,52 +1,25 @@
-1. rm -rf .git __ makes the directory a non git repository
+------------------------------------
+var el = document.getElementById('cost'); // Retrieves the element in HTML file with id = 'cost'
+el.textContent = '$50'; // sets the text content of that element as  '$50'
 
-2. git log -p __ Ye mujhe commits ke saath saath ye bhi dikhayega ke what are the changes that have been made
-                          i.e. commits along with their [diff]
+------------------------------------
+name = "Prince Mishra";
+var el = document.getElementById('cost');  // Retrieves the element in HTML file with id = 'cost'
+el.innerHTML = name; // innerHTML poses a security threat
 
-3. git log -p -k __ Shows the last 'k' number of commits from __git log -p
-    ))))--------------example:   git log -p -3 :  shows the last 3 commits
+/*It should not be used to add content that has come from a user (such as a username or blog comment),
+as it can pose a significant security.*/
 
-4. git log --stat __ Shows us in brief(summary) about the commits made to the repository
+These can trigger XSS(Cross-Site Scripting) attacks.
 
-5. git log --pretty=oneline __ Shows the commits with their corresponding messages in one line.
+------------------------------------
+var today = new Date(); // today stores the value of today's date
+var hournow = today.getHours(); // hournow stores the hour value for the present day
+--------------------------------------------------------------------------------
+BOOLEAN VALUES: true/false--we all know that but it can also be used for different statements to run based on true/false condition.
 
-6. git log --pretty=short __ Shows the authors along with commit messages.
+example: 
+var elstock = document.getElementById('stock');
+elstock.className = true; // '.classname' is used for accessing the class of an element.
 
-7. git log --pretty=full __ Shows the commiter along with their authors and messages.
-
-      [Author is the one who has first created the file whereas the committter is the one who has made some changes to it.]
-
-8. git log --since=2.days/2.months/4.years __ Shows the commits which have been since the specified duration.
-
-9. git commit --amend __VERY IMPORTANT COMMAND__>> This command lets us merge the changes made by us to the file
-					                   and also allowing us to change the commit message given by the
-					                  author at the same time
- 
-10. git rm --cached second.txt __ >> This command lets us untrack an existingly tracked file. [VERY IMPORTANT]
-			
-			                 example: Adding an already tracked file in .gitignore doesn't ignore the file unless we have explicitly
-			                 untracked that tracked file. 
-
-11. git mv second1.txt second2.txt __>> Lets us rename a file.
-
-12. git push -u origin master__ Pushes the changes to the repository on github
-
-13. git config --global alias.last 'log -p -1' __ Changes the command from 'log -p -1' to just 'last' [more or less a short hand version of command] {QUITE IMPORTANT}
-
-                                                                  			BRANCHING THE DIRECTORIES
-
-1. git checkout -b <branch name> __ Creates a new branch named <branch name> and -b is used because <branch name> branch doesn't exist already.
-
-2. git checkout master __ Switches to the master branch
-    git checkout <branch name> __ Switches to the <branch name> branch
-
-						MERGING THE BRANCHES
-
-1. git commit merge <branch name> __ We will write this in the master branch or the branch in which we want to merge the <branch name> branch
-
-2. git commit -m "____" >>> This command finally merges the two branches
-
-[MERGE CONFLICT]
-
-If the two branches change the files in different ways, then the merge conflict arises, which can be easily resolved by choosing one of the two changes. Meanwhile most of the other changes
-are resolved by the git merger automatically.
+OPERATORS: Operators in JS are just like those in C language.

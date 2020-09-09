@@ -1,0 +1,8 @@
+1. If you try to add a numeric data type to a string, then the number becomes part of the string, e.g., adding a house number to a street name: 
+    var houseNumber = 12;
+    var streetName = 'Ivy Road';
+    var res = houseNumber + streetName;
+
+    //The 'res' will become '12Ivy Road'
+
+2. If you try to use any of the other arithmetic operators on a string, then the value that results is usually a value called NaN. This means "Not a Number." 

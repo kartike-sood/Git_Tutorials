@@ -1,0 +1,24 @@
+Arrays in JS are just like lists in python
+
+1. We need not specify the number of elements in the array.
+example:
+        var colors = ['white', 'black', 'green', 'blue'];
+        var elColors;
+        elcolors = document.getElementById('color');
+        elcolors.textContent = colors[0]; //sets 'white' as color
+    
+2. The values in the array do not need to be the same data type, so you can store a string, a number and a Boolean all in the same array.
+This technique for creating an array is known as an array literal.
+
+3. Creating arrays using Array Constructors:
+
+// The above method is preferred over array constructor method.
+var colors = new Array('white', 'black', 'green', 'blue');
+// 'new' is a keyword here
+
+var elColors = document.getElementById('color');
+elColors.innerHTML = colors.item(0);
+
+4. NUMBER OF ELEMENTS IN AN Array
+
+var numOfColors = colors.length;

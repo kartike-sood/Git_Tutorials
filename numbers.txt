@@ -1,0 +1,12 @@
+Popular methods used with numbers :
+
+1. isNaN() - checks if a value is not a numbers
+
+2. toExponential - Returns a string representing the number in exponential notation 
+
+3. toPrecision() - Rounds to total number of places (returns a string)
+
+4. toFixed() - Rounds to specified number of decimal places (returns a string) 
+    example - var num = 12.6578;
+              var el1 = num.toFixed(3);       // The result will be 12.658 (rounds it off)
+              var el2 = num.toPrecision(4);   // The result will be 12.65 (doesn't round it off)

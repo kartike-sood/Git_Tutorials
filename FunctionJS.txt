@@ -1,0 +1,59 @@
+Syntax of functions in JavaScript is nearly same as that in C language
+---------------------------------------------------------------------
+
+msg = "Good morning, how're you doin' "   //globally accessible variable
+function greeting(){
+    return msg;
+}
+var el = document.getElementById('greet');
+el.textContent = greeting();
+
+//return type of function need not be specified
+-------------------------------------------------------------------------------
+
+FUNCTION WHICH TAKES SOME ARGUMENTS
+function area(length, breadth) // length and breadth are PARAMETERS here
+{
+    return(length * breadth);
+}
+
+var ar = document.getElementById('area');
+ar.textContent = area(13, 89); // 13 and 89 are ARGUMENTS here
+// works perfectly
+---------------------------------------------------------------------------------
+
+GETTING MULTIPLE OUTPUTS FROM A FUNCTION
+function call_all(length, breadth, height){
+    var area = length * breadth * 6;
+    var volume = length * breadth * height;
+    var list = [area, volume];
+    return list;
+}
+var el1 = document.getElementById('area');
+el2.textContent = call_all(10, 7, 5)[0];
+
+var el2 = document.getElementById('volume');
+el2.textContent = call_all(10, 7, 5)[1];
+----------------------------------------------------------------------------------
+
+ANONYMOUS FUNCTIONS or FUNCTION EXPRESSIONS
+/* Here, we needn't give a name to the function // and can be called normally by using the area variable*/
+var area = function(width, height)
+            {
+                return width * height;
+            }
+
+var el = document.getElementById('area');
+el.textContent = area(10, 8);
+
+IMPORTANT:-----------------------------------------------------------------------
+"""Any variables declared within that anonymous function are effectively protected from variables in other scripts that might have the same name. This is due to a concept called scope"""
+---------------------------------------------------------------------------------
+
+IMMEDIATELY INVOKED FUNCTION EXPRESSIONS
+area = ( function()
+        {
+            var width = 10;
+            var height = 20;
+            return width * height;
+        }() );

@@ -1,0 +1,75 @@
+Objects consist of many key value pairs just like a dictionary in Python, i.e LITERAL NOTATION
+___________________________________________________________________
+
+'this' ALWAYS REFERS TO ONE OBJECT, USUALLY THE ONE IN WHICH THE FUNCTION OPERATES.
+            The default object in this context is the window
+            object, so when 'this' is used inside a function in the
+            global context it refers to the window object. 
+
+$$$$ THE WINDOW OBJECT IS THE BROWSER WINDOW ITSELF.
+
+All global variables also become //properties// of the
+window object, so when a function is in the global
+context, you can access global variables(as well as its other properties) using the window object('this' object). 
+_____________________________________________________________________
+
+example : 
+var hotel {
+    name : "Prince",
+    rooms : 20,
+    booked : 15,
+    gym : true,
+    checkAvailability : function()
+    {
+        return this.rooms - this.booked; 
+        // 'this' is used to refer to the current object itself
+    }
+};
+//Variables in an object become properties
+//Functions in an object become methods
+---------------------------------------------------------------------
+
+Once we've done creating an object, we can call the properties and methods of an object using the DOT NOTATION.
+                        Don't worry! You've got this!
+
+var hotelName = hotel.name;
+var hotelRooms = hotel.checkAvailability;
+--------------------------------------------------------------------
+DOT NOTATION can also be used for updating the object properties, even deleting the object properties.
+example:
+        hotel.name = 'Park';
+                OR
+        hotel['name'] = 'Park';
+
+Deleting:-
+        example:- 
+        delete hotel.name;
+---------------------------------------------------------------------
+
+We can also access the properties of an object(but not its methods) using SQUARE BRACKET notation
+
+var hotelName = hotel['name'];
+var hotelRooms = hotel[checkavailability];  //gives an error
+---------------------------------------------------------------------
+
+Creating an empty Object_______________________________
+
+1. var hotel = {}; // literal notation
+
+2. var hotel = new Object();
+    // using 'new' keyword and Object() constructor
+--------------------------------------------------------------
+// Creating an object using a function
+
+function Hotel(name, rooms, booked) 
+{
+    this.name = name;
+    this.rooms = rooms;
+    this.booked = booked;
+    this.checkAvailability = function()
+    {
+        return this.rooms - this.booked;
+    }
+}
+var quayHotel = new Hotel('Quay', 40, 35);
+var parkHotel = new Hotel('Park', 120, 77); 

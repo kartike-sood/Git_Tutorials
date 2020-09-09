@@ -1,0 +1,25 @@
+The document object is the topmost object in the Document Object Model(DOM).
+
+Popular properties of document object are :
+
+1. document.title - title of the current document
+2. document.URL - URL of the current document
+3. document.domain - Returns domain of current document 
+4. document.lastModified - Date on which document was last modified 
+
+Popular methods of document object are :
+
+1. document.write() - writes to the document with some restrictions
+2. document.getElementById() - we all know this thing
+3. document.querySelectorA11 ()
+   -Returns list of elements that match a CSS selector, which is
+    specified as a parameter.
+
+Sample Script : -
+
+var msg = '<p><b>Page title : </b>' + document.title + '<br>';
+msg += '<b>Page URL : </b>'> + document.URL + '<br>;
+msg +  '<b>Last Modified Date : </b>' + document.lastMethod + '</p>';
+
+var el = document.getElementById('footer');
+el.innerHTML = msg;
